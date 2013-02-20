@@ -1,9 +1,17 @@
 # Angular Unicorn Directive
+Do you ever get depressed at how few unicorns there are in your AngularJS app? I certainly do. But worry no more, dear friend. With this directive, adding a unicorn to your app has never been easier.
 
 ## Usage
 1. Include `unicorn.js`.
 2. Add `unicorn-directive` as a dependency to your app.
 3. Make `<unicorn>`s.
+
+## Bower
+Installable via `bower`:
+
+```bash
+bower install angular-unicorn-directive
+```
 
 ## Example
 

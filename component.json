@@ -1,6 +1,7 @@
 {
   "name": "angular-unicorn-directive",
   "version": "0.0.1",
+  "main": "./unicorn.js",
   "dependencies": {
     "angular": "~1.0.4"
   }

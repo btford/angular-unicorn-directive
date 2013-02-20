@@ -1,4 +1,6 @@
 # Angular Unicorn Directive
+[Homepage](http://btford.github.com/angular-unicorn-directive/)
+
 Do you ever get depressed at how few unicorns there are in your AngularJS app? I certainly do. But worry no more, dear friend. With this directive, adding a unicorn to your app has never been easier.
 
 ## Usage
@@ -14,6 +16,7 @@ bower install angular-unicorn-directive
 ```
 
 ## Example
+See the [homepage](http://btford.github.com/angular-unicorn-directive/) for an example.
 
 ```html
 <div ng-app="unicorn-directive">

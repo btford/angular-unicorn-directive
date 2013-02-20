@@ -7,7 +7,7 @@
     <meta name="description" content="Unicorns.">
     <link href="//netdna.bootstrapcdn.com/bootswatch/2.3.0/cerulean/bootstrap.min.css" rel="stylesheet">
   </head>
-  <body class="container">
+  <body class="container" ng-app="unicorn-directive">
   <div class="row">
     <div class="span12">
       <h1>Angular Unicorn Directive</h1>
@@ -34,22 +34,57 @@
   </div>
   <div class="row">
     <div class="span6">
-      <div ng-app="unicorn-directive">
-        <unicorn></unicorn>
-        <p>^ This is a unicorn</p>
-      </div>
+      <unicorn />
+      <p>^ This is a unicorn</p>
     </div>
-      
+
     <div class="span6">
 <pre><code>&lt;div ng-app="unicorn-directive"&gt;
-  &lt;unicorn&gt;&lt;/unicorn&gt;
+  &lt;unicorn/&gt;
   &lt;p&gt;^ This is a unicorn&lt;/p&gt;
 &lt;/div&gt;
 </code></pre>
     </div>
   </div>
+
+  <div class="row">
+    <div class="span12">
+      <h3>Parameters</h3>
+      <ul>
+        <li><code>width</code> (default: 236)</li>
+        <li><code>height</code> (default: 157)</li>
+        <li><code>scale</code> (default: 1.0) will scale unicorn's size by provided value (works with or without explicit width/height)</li>
+        <li><code>color</code> (default: rgba(255, 192, 203, 1))</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span6">
+      <unicorn color="blue" scale="0.5" />
+    </div>
+    <div class="span6">
+<pre><code>&lt;div ng-app="unicorn-directive"&gt;
+  &lt;unicorn color="blue" scale="0.5" /&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span6">
+      <unicorn width="150" height="200" color="rgba(255, 0, 0, 0.5)" />
+    </div>
+    <div class="span6">
+<pre><code>&lt;div ng-app="unicorn-directive"&gt;
+  &lt;unicorn width="150" height="200" color="rgba(255, 0, 0, 0.5)" /&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+  </div>
+
   <hr>
-    
+
     <div class="row">
       <div class="span12">
         <h2>Bower</h2>
